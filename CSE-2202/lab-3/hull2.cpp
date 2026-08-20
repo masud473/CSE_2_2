@@ -1,6 +1,5 @@
 #include <algorithm>
 #include <bits/stdc++.h>
-#include <cstdlib>
 #include <vector>
 using namespace std;
 class Point {
