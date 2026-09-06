@@ -1,4 +1,4 @@
-from math import log
+from math import log,exp
 from sympy import symbols,solve,Eq
 def solver(xl:list,yl:list)->dict:
     xy=sum(i*j for i,j in zip(xl,yl))
@@ -19,4 +19,4 @@ y=[2.473,6.722,18.274,49.673,135.026]
 y=[f1(i) for i in y]
 a,b=solver(x,y).values()
 
-print(a,b)
+print(exp(a),b)
