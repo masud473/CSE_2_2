@@ -277,8 +277,8 @@ Output: Solution vector (x*, y*)
 1. Set x <- x0, y <- y0
 2. Loop:
      D <- fx(x, y) * gy(x, y) - fy(x, y) * gx(x, y)
-     h <- (-f(x, y) * gy(x, y) - g(x, y) * fy(x, y)) / D
-     k <- (-f(x, y) * gx(x, y) - g(x, y) * fx(x, y)) / D
+     h <- (-f(x, y) * gy(x, y) + g(x, y) * fy(x, y)) / D
+     k <- (-g(x, y) * fx(x, y) + f(x, y) * gx(x, y)) / D
      x <- x + h
      y <- y + k
      If abs(h) < eps and abs(k) < eps then:
